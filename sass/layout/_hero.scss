@@ -1,0 +1,72 @@
+.hero {
+  background: linear-gradient(rgba(34, 34, 34, 0.6), rgba(34, 34, 34, 0.6)),
+    url(../../img/hero.jpg) no-repeat top left/cover;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+    position: relative;
+    height: inherit;
+  }
+
+  &__heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  %hero-text {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  &__logo {
+    @extend %hero-text;
+  }
+
+  &__nav {
+    @extend %hero-text;
+  }
+
+  &__content {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 5rem;
+    text-align: left;
+    line-height: 1.05;
+    font-weight: 700;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+  }
+
+  &__btn {
+    display: inline-block;
+    background: $hero-main;
+    border: none;
+    color: #fff;
+    padding: 1.6rem 3.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+
+  &__btn:hover {
+    background: darken($hero-main, 15%);
+  }
+}
