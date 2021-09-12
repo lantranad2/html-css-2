@@ -13,5 +13,17 @@ html {
 body {
   font-family: "Inter", sans-serif;
   font-size: 1.6rem;
-  line-height: 1.5;
+  line-height: 1;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4.4rem;
+  margin: 4.4rem 0;
+}
+
+.section {
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 0 3.2rem rgba(0, 0, 0, 0.1);
 }
