@@ -1,0 +1,52 @@
+.accordion {
+  padding: 2.4rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 2.4rem;
+
+  &__number {
+    color: $text-light;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  &__title {
+    color: $text-bold;
+    font-weight: 600;
+    font-size: 2.4rem;
+  }
+
+  &__icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+    stroke: $accrdion-open;
+  }
+
+  &__hidden-box {
+    grid-column: 2 / span 1;
+    display: none;
+  }
+
+  &__text {
+    margin-bottom: 1.2rem;
+  }
+
+  &__list {
+    margin-left: 2rem;
+    color: $text-medium;
+  }
+}
+
+.open {
+  border-top: 0.4rem solid $accrdion-open;
+
+  .accordion__number,
+  .accordion__title {
+    color: $accrdion-open;
+  }
+
+  .accordion__hidden-box {
+    display: block;
+  }
+}
